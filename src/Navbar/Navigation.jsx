@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { FaFacebookF, FaTiktok } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { BsCart4 } from "react-icons/bs";
-import momologo from "../assets/Navbar/Momologo.png";
+import momologo from "../assets/NavBar/Momologo.png";
 import { CartContext } from "../Context/CartProvider";
 import { useContext } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -18,7 +18,7 @@ function Navigation() {
   return (
     <div className="flex justify-around items-center py-3 px-6">
       <div className="flex gap-x-2 items-center">
-        <img src={momologo} alt="Momo Logo" className="w-8 h-8" />
+        <img src={momologo} alt="Momo" className="w-8 h-8" />
         <NavLink to="/" className="text-green-950 text-2xl font-bold">
           momos
         </NavLink>
