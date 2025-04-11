@@ -8,7 +8,8 @@ import {
   FaInstagram,
   FaTiktok,
 } from "react-icons/fa";
-import momologo from "../assets/Navbar/MomoLogo.png";
+import momologo from "../assets/NavBar/Momologo.png";
+
 
 function Footer() {
   return (
