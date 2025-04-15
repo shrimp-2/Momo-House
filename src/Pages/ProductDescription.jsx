@@ -97,7 +97,7 @@ function ProductDescription() {
                     dispatch({ type: "AddToCart", payload: product });
 
                     toast.success("Added TO Cart", {
-                      position: "top-center",
+                      position: "top-right",
                       autoClose: 500,
                       hideProgressBar: false,
                       closeOnClick: false,
