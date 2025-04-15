@@ -16,6 +16,9 @@ import Failure from "./Payment/Failure";
 import Login from "./auth/Login";
 import Profile from "./auth/Profile";
 import ProtectedRoutes from "./auth/ProtectedRoutes";
+import Terms from "./Pages/Terms";
+import Privacy from "./Pages/Privacy";
+import Support from "./Pages/Support";
 function App() {
   return (
     <div className="">
@@ -24,19 +27,32 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/menu" element={<ProtectedRoutes  components={<Menu/>} />} />
+        <Route
+          path="/menu"
+          element={<ProtectedRoutes components={<Menu />} />}
+        />
         <Route path="/services" element={<Service />} />
         <Route path="/allergyadvice" element={<AllergyAdvice />} />
         <Route path="/cartpage" element={<CartPage />} />
-        <Route path="/payment" element={<ProtectedRoutes  components={<Payment/>} />} />
-        <Route path="/success" element={<Success/>} />
-        <Route path="/failure" element={<Failure/>} />
+        <Route
+          path="/payment"
+          element={<ProtectedRoutes components={<Payment />} />}
+        />
+        <Route path="/success" element={<Success />} />
+        <Route path="/failure" element={<Failure />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
 
-        <Route path='/productdescription/:id' element={<ProtectedRoutes  components={<ProductDescription/>} />}/>
+        <Route
+          path="/productdescription/:id"
+          element={<ProtectedRoutes components={<ProductDescription />} />}
+        />
+
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/support" element={<Support />} />
       </Routes>
-     <Footer/>
+      <Footer />
     </div>
   );
 }
