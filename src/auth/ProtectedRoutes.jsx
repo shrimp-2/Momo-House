@@ -7,13 +7,14 @@ function ProtectedRoutes({ components }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!isAuthenticated && isLoading) {
+    if (!isAuthenticated && !isLoading) {
       navigate("/login");
     }
   }, [isAuthenticated, isLoading, navigate]);
 
-  if (isLoading) return <div>loading.....</div>
-  return isAuthenticated? components:null;
+  if (isLoading) return <div>loading.....</div>;
+  
+  return isAuthenticated ? components : null;
 }
 
 export default ProtectedRoutes;
